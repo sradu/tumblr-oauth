@@ -5,6 +5,7 @@ require 'tumblr-oauth/request'
 module TumblrOAuth
   class Client
     require 'tumblr-oauth/client/blog'
+    require 'tumblr-oauth/client/user'
 
     attr_accessor *Configuration::VALID_OPTIONS_KEYS
 
@@ -21,5 +22,6 @@ module TumblrOAuth
     include Request
 
     include TumblrOAuth::Client::Blog
+    include TumblrOAuth::Client::User
   end
 end

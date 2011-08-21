@@ -18,7 +18,7 @@ Jeweler::Tasks.new do |gem|
   gem.homepage = "http://github.com/shir/tumblr-oauth"
   gem.license = "MIT"
   gem.summary = %Q{Tumblr library with OAuth support}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.description = %q{A Ruby wrapper for Tumblr AOuth API}
   gem.email = "shaynurov@gmail.com"
   gem.authors = ["Ildar Shaynurov"]
   # dependencies defined in Gemfile
@@ -38,9 +38,11 @@ end
 
 task :default => :spec
 
-require 'rake/rdoctask'
-Rake::RDocTask.new do |rdoc|
-  version = File.exist?('VERSION') ? File.read('VERSION') : ""
+require 'rdoc/task'
+require File.expand_path('../lib/tumblr-oauth/version', __FILE__)
+
+RDoc::Task.new do |rdoc|
+  version = TumblrOAuth::VERSION
 
   rdoc.rdoc_dir = 'rdoc'
   rdoc.title = "tumblr-oauth #{version}"

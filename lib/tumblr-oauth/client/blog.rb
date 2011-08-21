@@ -1,15 +1,15 @@
 module TumblrOAuth
   class Client
     module Blog
-      def info
+      def blog_info
         blog_request(:get, 'info', :api_key)
       end
 
-      def avatar
+      def blog_avatar
         blog_request(:get, 'avatar')
       end
 
-      def followers
+      def blog_followers
         blog_request(:get, 'followers', :oauth)
       end
 

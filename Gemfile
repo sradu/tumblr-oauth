@@ -1,7 +1,7 @@
 source "http://rubygems.org"
 
-gem 'faraday', '~> 0.6.0'
-gem 'faraday_middleware', '~> 0.6.0'
+gem 'faraday', '~> 0.7.4'
+gem 'faraday_middleware', '~> 0.7.0'
 gem 'multi_json', '~> 1.0.0'
 gem 'hashie', '~> 1.0.0'
 gem 'simple_oauth', '~> 0.1.5'

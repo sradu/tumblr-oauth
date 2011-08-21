@@ -22,10 +22,10 @@ TumblrOAuth.configure do |config|
 end
 
 tumblr_client = TumblrOAuth::Client(
-  :oauth_token        => 'oauth_token'
-  :oauth_token_secret => 'oauth_secret'
+  :oauth_token        => 'oauth_token',
+  :oauth_token_secret => 'oauth_secret',
   :blog_host          => 'blog_host_name' # For example "test.tumblr.com"
-end
+)
 ```
 
 Copyright
