@@ -6,7 +6,7 @@ module TumblrOAuth
       end
       
       def primary_blog
-        blog = info.response.user.blogs.find {|blog| blog.primary }
+        blog = user_info.response.user.blogs.find {|blog| blog.primary }
         URI.parse(blog.url).host
       end
       
