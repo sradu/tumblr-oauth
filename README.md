@@ -29,11 +29,13 @@ tumblr_client = TumblrOAuth::Client(
   :blog_host          => 'blog_host_name' # For example "test.tumblr.com"
 )
 ```
-Getting user info
+
+Getting user info:
 ```ruby
 tumblr_client.user_info
 ```
-Getting user primary blog host name :
+
+Getting user primary blog host name:
 ```ruby
 tumblr_client.primary_blog
 ```
