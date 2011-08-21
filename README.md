@@ -17,6 +17,7 @@ Usage
 -----
 
 Setting up a client:
+
 ```ruby
 TumblrOAuth.configure do |config|
   config.consumer_key       = 'consumer_key'
