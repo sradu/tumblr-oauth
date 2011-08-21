@@ -3,7 +3,7 @@ source "http://rubygems.org"
 gem 'faraday', '~> 0.7.4'
 gem 'faraday_middleware', '~> 0.7.0'
 gem 'multi_json', '~> 1.0.0'
-gem 'hashie', '~> 1.0.0'
+gem 'hashie', '~> 1.1.0'
 gem 'simple_oauth', '~> 0.1.5'
 
 # Add dependencies to develop your gem here.
