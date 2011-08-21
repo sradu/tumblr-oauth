@@ -16,9 +16,9 @@ gem install 'tumblr-oauth'
 Usage
 -----
 
-Setting up a client:
-
 ```ruby
+
+# Setting up a client
 TumblrOAuth.configure do |config|
   config.consumer_key       = 'consumer_key'
   config.consumer_secret    = 'consumer_secret'
@@ -29,15 +29,11 @@ tumblr_client = TumblrOAuth::Client(
   :oauth_token_secret => 'oauth_secret',
   :blog_host          => 'blog_host_name' # For example "test.tumblr.com"
 )
-```
 
-Getting user info:
-```ruby
-tumblr_client.user_info
-```
+# Getting user info
+tumblr_client.user_info 
 
-Getting user primary blog host name:
-```ruby
+# Getting user primary blog host name:
 tumblr_client.primary_blog
 ```
 
