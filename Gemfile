@@ -2,7 +2,7 @@ source "http://rubygems.org"
 
 gem 'faraday', '~> 0.8'
 gem 'faraday_middleware', '~> 0.8.0'
-gem 'multi_json', '~> 1.0.0'
+gem 'multi_json', '~> 1.4.0'
 gem 'hashie', '~> 1.2.0'
 gem 'simple_oauth', '~> 0.1.5'
 
