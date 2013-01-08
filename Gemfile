@@ -1,7 +1,7 @@
 source "http://rubygems.org"
 
-gem 'faraday', '~> 0.7.4'
-gem 'faraday_middleware', '~> 0.7.0'
+gem 'faraday', '~> 0.8'
+gem 'faraday_middleware', '~> 0.8.0'
 gem 'multi_json', '~> 1.0.0'
 gem 'hashie', '~> 1.2.0'
 gem 'simple_oauth', '~> 0.1.5'
@@ -10,10 +10,9 @@ gem 'simple_oauth', '~> 0.1.5'
 # Include everything needed to run rake, tests, features, etc.
 group :development, :test do
   gem "rspec", "~> 2.3.0"
-  gem "bundler", "~> 1.0.0"
+  gem "bundler", "~> 1.2.3"
   gem "jeweler", "~> 1.6.4"
 
   gem 'guard'
-  gem 'rb-fsevent', :require => false if RUBY_PLATFORM =~ /darwin/i
   gem 'guard-rspec'
 end

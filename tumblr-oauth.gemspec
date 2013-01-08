@@ -3,8 +3,8 @@ require File.expand_path('../lib/tumblr-oauth/version', __FILE__)
 
 Gem::Specification.new do |gem|
   gem.add_dependency 'hashie', '~> 1.2.0'
-  gem.add_dependency 'faraday', '~> 0.7.4'
-  gem.add_dependency 'faraday_middleware', '~> 0.7.0'
+  gem.add_dependency 'faraday', '~> 0.8.0'
+  gem.add_dependency 'faraday_middleware', '~> 0.8.0'
   gem.add_dependency 'multi_json', '~> 1.0.0'
   gem.add_dependency 'simple_oauth', '~> 0.1.5'
   gem.add_development_dependency 'guard'
